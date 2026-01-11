@@ -10,10 +10,10 @@
     "f_req": 32
   },
   "metrics": {
-    "auc": 0.9989797979797914,
+    "auc": 0.9999999999999934,
     "eer": 1.7208456881689926e-15,
-    "eer_threshold": 0.5427123308181763,
-    "zero_fp_threshold": 0.40794614057405093,
+    "eer_threshold": 0.5427127480506897,
+    "zero_fp_threshold": 0.40794599056243896,
     "fnr_at_zero_fp": 0.0
   },
   "note": "zero_fp_threshold = 0 FP sur TES négatifs. Fiabilité réelle nécessite des négatifs 'vraie vie' (TV, autres voix, etc.)."

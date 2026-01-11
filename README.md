@@ -8,8 +8,8 @@ Enregistrer des échantillons du mot que vous voulez wake au moins faire 50 de c
 
 Entrainer le modèle avec les échantillons récoltés en pointant sur les dossiers avec les échantillons
 
-`python3 train_ovos_lr.py --positive wakeword_data/ovos/positive --negative wakeword_data/ovos/negative`
+`python3 train_wakeword_lr.py --positive wakeword_data/ovos/positive --negative wakeword_data/ovos/negative`
 
 lancer la reco :
 
-`python3 run_ovos_lr.py --mic 9`
+`python3 run_wakeword_lr.py --mic 9`

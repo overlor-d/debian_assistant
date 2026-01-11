@@ -153,7 +153,12 @@ def auc_eer(pos: np.ndarray, neg: np.ndarray) -> Tuple[float, float, float]:
     fpr_arr = np.array(fpr_list, dtype=np.float64)
     tpr_arr = np.array(tpr_list, dtype=np.float64)
     order = np.argsort(fpr_arr)
-    auc = float(np.trapz(tpr_arr[order], fpr_arr[order]))
+    
+    if hasattr(np, "trapezoid"):
+        auc = float(np.trapezoid(tpr_arr[order], fpr_arr[order]))
+    else:
+        auc = float(np.trapz(tpr_arr[order], fpr_arr[order]))
+
     return auc, float(eer), float(eer_thr)
 
 
