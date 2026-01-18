@@ -1,3 +1,5 @@
 openwakeword
+onnxruntime
+numpy
 sounddevice
 soundfile

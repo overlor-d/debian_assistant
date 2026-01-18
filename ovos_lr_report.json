@@ -1,13 +1,14 @@
 {
   "counts": {
+    "positives": 300,
+    "negatives": 330,
+    "total": 630,
+    "train_examples": 630,
     "pos_files": 50,
-    "neg_files": 55,
-    "train_examples": 630
+    "neg_files": 55
   },
   "embedder": {
-    "audio_len": 16000,
-    "t_req": 76,
-    "f_req": 32
+    "audio_len": 16000
   },
   "metrics": {
     "auc": 0.9999999999999934,
@@ -16,5 +17,5 @@
     "zero_fp_threshold": 0.40794599056243896,
     "fnr_at_zero_fp": 0.0
   },
-  "note": "zero_fp_threshold = 0 FP sur TES négatifs. Fiabilité réelle nécessite des négatifs 'vraie vie' (TV, autres voix, etc.)."
+  "note": "zero_fp_threshold = 0 FP sur l'échantillon de tests négatifs. Valider avec des données réelles variées."
 }
